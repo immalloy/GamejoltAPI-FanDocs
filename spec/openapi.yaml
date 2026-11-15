@@ -1,0 +1,3687 @@
+﻿openapi: 3.1.0
+info:
+  title: Game Jolt Site API (Unofficial)
+  version: 0.1.0
+  description: Unofficial reference to Game Jolt website API calls. The spec documents the live listing response and source-observed frontend operations; unverified details are marked.
+servers:
+  - url: https://gamejolt.com/site-api
+    description: Public Game Jolt site API host
+tags:
+  - name: "Game Jolt dash"
+    description: Frontend operations grouped by feature; endpoint access and runtime behavior may vary.
+  - name: "Game Jolt discover"
+    description: Frontend operations grouped by feature; endpoint access and runtime behavior may vary.
+  - name: "Game Jolt realms"
+    description: Frontend operations grouped by feature; endpoint access and runtime behavior may vary.
+  - name: "Game Jolt forums"
+    description: Frontend operations grouped by feature; endpoint access and runtime behavior may vary.
+  - name: "Game Jolt communities"
+    description: Frontend operations grouped by feature; endpoint access and runtime behavior may vary.
+  - name: "Game Jolt help"
+    description: Frontend operations grouped by feature; endpoint access and runtime behavior may vary.
+  - name: "Game Jolt onboarding"
+    description: Frontend operations grouped by feature; endpoint access and runtime behavior may vary.
+  - name: "Game Jolt library"
+    description: Frontend operations grouped by feature; endpoint access and runtime behavior may vary.
+  - name: "Game Jolt inventory"
+    description: Frontend operations grouped by feature; endpoint access and runtime behavior may vary.
+  - name: "Game Jolt landing"
+    description: Frontend operations grouped by feature; endpoint access and runtime behavior may vary.
+  - name: "Game Jolt stickers"
+    description: Frontend operations grouped by feature; endpoint access and runtime behavior may vary.
+  - name: "Game Jolt posts"
+    description: Frontend operations grouped by feature; endpoint access and runtime behavior may vary.
+  - name: "Game Jolt profile"
+    description: Frontend operations grouped by feature; endpoint access and runtime behavior may vary.
+  - name: "Game Jolt marketplace"
+    description: Frontend operations grouped by feature; endpoint access and runtime behavior may vary.
+  - name: "Game Jolt content"
+    description: Frontend operations grouped by feature; endpoint access and runtime behavior may vary.
+  - name: "Moderation"
+    description: Frontend operations grouped by feature; endpoint access and runtime behavior may vary.
+  - name: "Game Jolt timezones"
+    description: Frontend operations grouped by feature; endpoint access and runtime behavior may vary.
+  - name: "Game Jolt touch"
+    description: Frontend operations grouped by feature; endpoint access and runtime behavior may vary.
+  - name: "Game Jolt theme-presets"
+    description: Frontend operations grouped by feature; endpoint access and runtime behavior may vary.
+  - name: "Comments"
+    description: Frontend operations grouped by feature; endpoint access and runtime behavior may vary.
+  - name: "Game Jolt auth"
+    description: Frontend operations grouped by feature; endpoint access and runtime behavior may vary.
+  - name: "Game Jolt download"
+    description: Frontend operations grouped by feature; endpoint access and runtime behavior may vary.
+  - name: "Game Jolt tracking"
+    description: Frontend tracking requests observed in source; not tested live.
+x-unresolved-frontend-calls:
+  description: Frontend request targets still held in runtime variables or helper-generated URLs. These entries are call evidence, not invented OpenAPI paths.
+  calls:
+    - method: GET
+      expression: "e"
+      bundle: "B84gXhRn2.js"
+    - method: GET
+      expression: "r.url"
+      bundle: "B8uF44mS.js"
+      bodyExpression: "void 0"
+    - method: POST
+      expression: "s"
+      bundle: "B9aQ_pVr2.js"
+      bodyExpression: "{}"
+    - method: POST
+      expression: "i"
+      bundle: "B9aQ_pVr2.js"
+      bodyExpression: "{}"
+    - method: GET
+      expression: "a"
+      bundle: "BAn1O3S4.js"
+    - method: POST
+      expression: "t"
+      bundle: "BcfEi_Su.js"
+      bodyExpression: "r||{}"
+    - method: POST
+      expression: "t"
+      bundle: "BcfEi_Su.js"
+      bodyExpression: "n&&n.data?n.data:{}"
+    - method: POST
+      expression: "e"
+      bundle: "BcfEi_Su.js"
+      bodyExpression: "n.data||this"
+    - method: GET
+      expression: "e"
+      bundle: "BhUSbe9b2.js"
+    - method: GET
+      expression: "e"
+      bundle: "BHYxa5mY2.js"
+      bodyExpression: "void 0"
+    - method: POST
+      expression: "e"
+      bundle: "BOCCEyTQ2.js"
+      bodyExpression: "{value:n}"
+    - method: GET
+      expression: "W"
+      bundle: "BuNI5Vrn.js"
+    - method: GET
+      expression: "`${W}?page=${w.value}`"
+      bundle: "BuNI5Vrn.js"
+    - method: GET
+      expression: "n+t"
+      bundle: "BUW3LRcg2.js"
+    - method: GET
+      expression: "e"
+      bundle: "BzNixCUH.js"
+    - method: GET
+      expression: "v(e)"
+      bundle: "C53HqzlT2.js"
+    - method: GET
+      expression: "i+`?`+a.join(`&`)"
+      bundle: "CDYoNq8w.js"
+      bodyExpression: "null"
+    - method: GET
+      expression: "X.makeFeedUrl(e,t)"
+      bundle: "CfJsM3lc2.js"
+    - method: GET
+      expression: "n"
+      bundle: "CIxNb3dT2.js"
+    - method: GET
+      expression: "t"
+      bundle: "CMfrpnqD.js"
+    - method: GET
+      expression: "t"
+      bundle: "CmrouJ4L.js"
+      bodyExpression: "void 0"
+    - method: POST
+      expression: "n"
+      bundle: "CmrouJ4L.js"
+      bodyExpression: "{}"
+    - method: GET
+      expression: "`/web/search/mention-suggestions?q=`+encodeURIComponent(e)"
+      bundle: "CmrouJ4L.js"
+      bodyExpression: "void 0"
+    - method: POST
+      expression: "n"
+      bundle: "Csin2f7W.js"
+      bodyExpression: "r"
+    - method: POST
+      expression: "K.value"
+      bundle: "Csin2f7W.js"
+      bodyExpression: "{...B(q.formModel,[`description`,`file`]),is_premium:+(p.value===`premium`)}"
+    - method: POST
+      expression: "`/web/reactions/${m?`react`:`unreact`}`"
+      bundle: "CsiSca01.js"
+      bodyExpression: "{resource:a.resourceName,resourceId:a.id,emojiId:o,timestamp:s()}"
+    - method: POST
+      expression: "O.value"
+      bundle: "CY16Oj7Q2.js"
+      bodyExpression: "k.value||void 0"
+    - method: GET
+      expression: "e.url"
+      bundle: "D1dJNY0f2.js"
+      bodyExpression: "null"
+    - method: POST
+      expression: "this.state.loadMoreUrl"
+      bundle: "D68knwV7.js"
+      bodyExpression: "this._getRequestBody(`reload`)"
+    - method: POST
+      expression: "this.state.loadMoreUrl"
+      bundle: "D68knwV7.js"
+      bodyExpression: "this._getRequestBody(`more`)"
+    - method: POST
+      expression: "this.state.loadMoreUrl"
+      bundle: "D68knwV7.js"
+      bodyExpression: "this._getRequestBody(`new`)"
+    - method: POST
+      expression: "n"
+      bundle: "DafXpkcN2.js"
+      bodyExpression: "{}"
+    - method: POST
+      expression: "e"
+      bundle: "Dg0za_qr.js"
+      bodyExpression: "t"
+    - method: POST
+      expression: "e"
+      bundle: "Dg0za_qr.js"
+      bodyExpression: "{_fields:t}"
+    - method: GET
+      expression: "a.value"
+      bundle: "DH_jDAkK.js"
+    - method: GET
+      expression: "`/web/forums/topics/`+e.params.id+`?page=`+(e.query.page||1)"
+      bundle: "DiHkLFzp2.js"
+    - method: POST
+      expression: "n"
+      bundle: "Dl5gTNSV.js"
+      bodyExpression: "{user_id:t.user_id,role:t.role}"
+    - method: POST
+      expression: "Oe.value"
+      bundle: "drP2y0ZT.js"
+      bodyExpression: "{}"
+    - method: GET
+      expression: "C.makeFeedUrl(e,L(e))"
+      bundle: "DzX7Vd-Y2.js"
+    - method: POST
+      expression: "`/web/dash/developer/games/packages/cancel-sales/`+[Y.formModel.game_id,Y.formModel.id].join(`/`)"
+      bundle: "EAOmEihy2.js"
+      bodyExpression: "{}"
+    - method: GET
+      expression: "e"
+      bundle: "FjmgllL92.js"
+    - method: GET
+      expression: "V.makeFeedUrl(e,Q(e))"
+      bundle: "Ibk6ElMn.js"
+      bodyExpression: "void 0"
+    - method: GET
+      expression: "e"
+      bundle: "LZz-rmBg.js"
+      bodyExpression: "null"
+    - method: GET
+      expression: "S(e)"
+      bundle: "Mh1arV4r.js"
+    - method: POST
+      expression: "n"
+      bundle: "NO2GDhae.js"
+      bodyExpression: "{}"
+    - method: POST
+      expression: "`/web/dash/developer/games/builds/set-platform/`+t.join(`/`)"
+      bundle: "p6YUNGW3.js"
+      bodyExpression: "{}"
+    - method: GET
+      expression: "k.makeFeedUrl(e,r)"
+      bundle: "w35xzBX7.js"
+    - method: GET
+      expression: "r"
+      bundle: "YFZXz_Op.js"
+    - method: GET
+      expression: "m.makeFeedUrl(e,`/web/posts/fetch/realm/${e.params.path}`)"
+      bundle: "_lCz-qoH2.js"
+    - method: GET
+      expression: "${socketUrl}/host"
+      bundle: "DiQ7MEwC.js"
+    - method: POST
+      expression: "${socketUrl}/token"
+      bundle: "DiQ7MEwC.js"
+      bodyExpression: "{auth_token, user_id?}"
+paths:
+  /web/discover/games:
+    get:
+      security: []
+      operationId: discoverGames
+      summary: List games by section and filters
+      description: Returns a paginated game listing. The FNF tag page requests this operation with `tag=fnf`.
+      parameters:
+        - name: section
+          in: query
+          required: false
+          description: Listing section. The frontend defaults to `featured`; its navigation also uses `hot`, `best`, and `new`.
+          schema:
+            type: string
+            default: featured
+        - name: tag
+          in: query
+          required: false
+          description: Game tag slug. The audited page uses `fnf`.
+          schema:
+            type: string
+        - name: date
+          in: query
+          required: false
+          description: Date filter forwarded by the frontend date route. Accepted values were not verified.
+          schema:
+            type: string
+        - name: sort
+          in: query
+          required: false
+          description: Sort value forwarded from the frontend query string. Accepted values were not verified.
+          schema:
+            type: string
+        - name: page
+          in: query
+          required: false
+          description: One-based page number. The frontend omits this parameter for page 1.
+          schema:
+            type: integer
+            minimum: 1
+            default: 1
+        - name: f_price
+          in: query
+          required: false
+          description: Price filter selected by the listing filters.
+          schema:
+            type: string
+            enum: [free, sale, paid, 5-less, 15-less, 30-less]
+        - name: f_os[]
+          in: query
+          required: false
+          description: Repeatable operating-system filter.
+          style: form
+          explode: true
+          schema:
+            type: array
+            items:
+              type: string
+              enum: [windows, mac, linux, other, rom]
+        - name: f_browser[]
+          in: query
+          required: false
+          description: Repeatable browser-runtime filter.
+          style: form
+          explode: true
+          schema:
+            type: array
+            items:
+              type: string
+              enum: [html, flash, unity]
+        - name: f_maturity[]
+          in: query
+          required: false
+          description: Repeatable maturity filter.
+          style: form
+          explode: true
+          schema:
+            type: array
+            items:
+              type: string
+              enum: [everyone, teen, adult]
+        - name: f_status[]
+          in: query
+          required: false
+          description: Repeatable development-status filter.
+          style: form
+          explode: true
+          schema:
+            type: array
+            items:
+              type: string
+              enum: [complete, wip, devlog]
+        - name: f_partners[]
+          in: query
+          required: false
+          description: Repeatable partner-games filter; the frontend currently exposes `partners`.
+          style: form
+          explode: true
+          schema:
+            type: array
+            items:
+              type: string
+              enum: [partners]
+        - name: query
+          in: query
+          required: false
+          description: Text filter. The frontend omits it when blank.
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Listing response. Verified live for anonymous pages 1 and 2, and one signed-in request for the FNF tag. The signed-in response included a user object and relationship fields on game items.
+          headers:
+            Content-Type:
+              schema:
+                type: string
+                const: application/json
+            Cache-Control:
+              description: Observed as `no-cache` on the page 2 request.
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DiscoverGamesResponse'
+  "/web/dash/communities/competitions/awards/save-sort/{t}":
+    post:
+      operationId: "post_web_dash_communities_competitions_awards_save_sort_t"
+      tags: ["Game Jolt dash"]
+      summary: "t"
+      description: "Observed in frontend source bundle(s): -RDTK9OF.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "t"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["-RDTK9OF.js"]
+      x-request-body-expressions: ["n"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/account":
+    get:
+      operationId: "get_web_dash_account"
+      tags: ["Game Jolt dash"]
+      summary: "account"
+      description: "Observed in frontend source bundle(s): -wZaxxnv2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["-wZaxxnv2.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/communities/competitions/voting/{id}/{channel}":
+    get:
+      operationId: "get_web_dash_communities_competitions_voting_id_channel"
+      tags: ["Game Jolt dash"]
+      summary: "channel"
+      description: "Observed in frontend source bundle(s): 0A1Hw5Ld2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: "channel"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["0A1Hw5Ld2.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/communities/competitions/voting-categories/save-sort/{id}":
+    post:
+      operationId: "post_web_dash_communities_competitions_voting_categories_save_sort_id"
+      tags: ["Game Jolt dash"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): 0A1Hw5Ld2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["0A1Hw5Ld2.js"]
+      x-request-body-expressions: ["t"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/discover/games/{id}":
+    get:
+      operationId: "get_web_discover_games_id"
+      tags: ["Game Jolt discover"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): 1zniRJSd.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["1zniRJSd.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/developer/games/packages/preview/{id}/{packageId}":
+    get:
+      operationId: "get_web_dash_developer_games_packages_preview_id_packageId"
+      tags: ["Game Jolt dash"]
+      summary: "packageId"
+      description: "Observed in frontend source bundle(s): 3lzLemG8.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: "packageId"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 2
+      x-source-bundles: ["3lzLemG8.js", "BPu5X9dQ.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/realms/{path}":
+    get:
+      operationId: "get_web_realms_path"
+      tags: ["Game Jolt realms"]
+      summary: "path"
+      description: "Observed in frontend source bundle(s): 3zNCqviB2.js, _lCz-qoH2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "path"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 2
+      x-source-bundles: ["3zNCqviB2.js", "_lCz-qoH2.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/analytics/display":
+    post:
+      operationId: "post_web_dash_analytics_display"
+      tags: ["Game Jolt dash"]
+      summary: "display"
+      description: "Observed in frontend source bundle(s): 6SJOhJ8e.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 3
+      x-source-bundles: ["6SJOhJ8e.js"]
+      x-request-body-expressions: ["{data:f}", "a"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/analytics/{resource}/{resourceId}":
+    get:
+      operationId: "get_web_dash_analytics_resource_resourceId"
+      tags: ["Game Jolt dash"]
+      summary: "resourceId"
+      description: "Observed in frontend source bundle(s): 6SJOhJ8e.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "resource"
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: "resourceId"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 2
+      x-source-bundles: ["6SJOhJ8e.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/forums":
+    get:
+      operationId: "get_web_forums"
+      tags: ["Game Jolt forums"]
+      summary: "forums"
+      description: "Observed in frontend source bundle(s): 8DXke55a2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 2
+      x-source-bundles: ["8DXke55a2.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/communities/view-channel/{path}/{channel}":
+    get:
+      operationId: "get_web_communities_view_channel_path_channel"
+      tags: ["Game Jolt communities"]
+      summary: "channel"
+      description: "Observed in frontend source bundle(s): B1tcRvwd.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "path"
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: "channel"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 2
+      x-source-bundles: ["B1tcRvwd.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/help":
+    get:
+      operationId: "get_web_help"
+      tags: ["Game Jolt help"]
+      summary: "help"
+      description: "Observed in frontend source bundle(s): B60e9xKb.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 2
+      x-source-bundles: ["B60e9xKb.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/help/page/{category}/{page}":
+    get:
+      operationId: "get_web_help_page_category_page"
+      tags: ["Game Jolt help"]
+      summary: "page"
+      description: "Observed in frontend source bundle(s): BBC5iJzD.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "category"
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: "page"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 2
+      x-source-bundles: ["BBC5iJzD.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/onboarding":
+    get:
+      operationId: "get_web_onboarding"
+      tags: ["Game Jolt onboarding"]
+      summary: "onboarding"
+      description: "Observed in frontend source bundle(s): BFpXa2j42.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 2
+      x-source-bundles: ["BFpXa2j42.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/payment-methods":
+    get:
+      operationId: "get_web_dash_payment_methods"
+      tags: ["Game Jolt dash"]
+      summary: "payment-methods"
+      description: "Observed in frontend source bundle(s): BgMrrybN.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 2
+      x-source-bundles: ["BgMrrybN.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/library/playlists":
+    get:
+      operationId: "get_web_library_playlists"
+      tags: ["Game Jolt library"]
+      summary: "playlists"
+      description: "Observed in frontend source bundle(s): Bh8iI6Rf2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "game_id"
+          in: query
+          required: false
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED LIVE"
+      x-live-status: "HTTP 200 observed; response schema inspection limited"
+      x-frontend-call-count: 2
+      x-source-bundles: ["Bh8iI6Rf2.js"]
+      responses:
+        '200':
+          description: HTTP 200 observed in a read-only request; the complete response schema is not documented.
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/library/follow/{type}":
+    post:
+      operationId: "post_web_library_follow_type"
+      tags: ["Game Jolt library"]
+      summary: "type"
+      description: "Observed in frontend source bundle(s): Bh8iI6Rf2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "type"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 2
+      x-source-bundles: ["Bh8iI6Rf2.js"]
+      x-request-body-expressions: ["{id:t.id,timestamp:Date.now()}"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/library/unfollow/{type}":
+    post:
+      operationId: "post_web_library_unfollow_type"
+      tags: ["Game Jolt library"]
+      summary: "type"
+      description: "Observed in frontend source bundle(s): Bh8iI6Rf2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "type"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 2
+      x-source-bundles: ["Bh8iI6Rf2.js"]
+      x-request-body-expressions: ["{id:t.id,timestamp:Date.now()}"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/discover/games/ratings/get-user-rating/{id}":
+    get:
+      operationId: "get_web_discover_games_ratings_get_user_rating_id"
+      tags: ["Game Jolt discover"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): BINqwtpF2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 2
+      x-source-bundles: ["BINqwtpF2.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/inventory/gift/accept/{id}":
+    post:
+      operationId: "post_web_inventory_gift_accept_id"
+      tags: ["Game Jolt inventory"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): BJ29JkOU.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 2
+      x-source-bundles: ["BJ29JkOU.js"]
+      x-request-body-expressions: ["{}"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/inventory/gift/decline/{id}":
+    post:
+      operationId: "post_web_inventory_gift_decline_id"
+      tags: ["Game Jolt inventory"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): BJ29JkOU.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 2
+      x-source-bundles: ["BJ29JkOU.js"]
+      x-request-body-expressions: ["{}"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/help/redirect/{path}":
+    get:
+      operationId: "get_web_help_redirect_path"
+      tags: ["Game Jolt help"]
+      summary: "path"
+      description: "Observed in frontend source bundle(s): BKYW5hA4.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "path"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 2
+      x-source-bundles: ["BKYW5hA4.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/developer/games/{id}":
+    get:
+      operationId: "get_web_dash_developer_games_id"
+      tags: ["Game Jolt dash"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): BMTCmTs-.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 2
+      x-source-bundles: ["BMTCmTs-.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/landing/app":
+    get:
+      operationId: "get_web_landing_app"
+      tags: ["Game Jolt landing"]
+      summary: "app"
+      description: "Observed in frontend source bundle(s): BOK9fOOC2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 2
+      x-source-bundles: ["BOK9fOOC2.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/developer/games/api/scores/{gameId}/{scoreId}":
+    get:
+      operationId: "get_web_dash_developer_games_api_scores_gameId_scoreId"
+      tags: ["Game Jolt dash"]
+      summary: "scoreId"
+      description: "Observed in frontend source bundle(s): BOxLc84s2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "gameId"
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: "scoreId"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 2
+      x-source-bundles: ["BOxLc84s2.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/developer/games/packages/{id}/{packageId}":
+    get:
+      operationId: "get_web_dash_developer_games_packages_id_packageId"
+      tags: ["Game Jolt dash"]
+      summary: "packageId"
+      description: "Observed in frontend source bundle(s): BPu5X9dQ.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: "packageId"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 2
+      x-source-bundles: ["BPu5X9dQ.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/developer/games/releases/create-stub/{gameId}/{packageId}":
+    post:
+      operationId: "post_web_dash_developer_games_releases_create_stub_gameId_packageId"
+      tags: ["Game Jolt dash"]
+      summary: "packageId"
+      description: "Observed in frontend source bundle(s): BPu5X9dQ.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "gameId"
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: "packageId"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["BPu5X9dQ.js"]
+      x-request-body-expressions: ["{}"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/stickers/fetch/{r}/{t}":
+    get:
+      operationId: "get_web_stickers_fetch_r_t"
+      tags: ["Game Jolt stickers"]
+      summary: "t"
+      description: "Observed in frontend source bundle(s): BPVRNLxn.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "r"
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: "t"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["BPVRNLxn.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/communities/manage/list-channels/{id}":
+    get:
+      operationId: "get_web_communities_manage_list_channels_id"
+      tags: ["Game Jolt communities"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): BPVRNLxn.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["BPVRNLxn.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/help/categories":
+    get:
+      operationId: "get_web_help_categories"
+      tags: ["Game Jolt help"]
+      summary: "categories"
+      description: "Observed in frontend source bundle(s): bQ8DPici.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["bQ8DPici.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/inventory/shop/purchase/{id}":
+    post:
+      operationId: "post_web_inventory_shop_purchase_id"
+      tags: ["Game Jolt inventory"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): bRmR5lry.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["bRmR5lry.js"]
+      x-request-body-expressions: ["e"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/email-preferences":
+    get:
+      operationId: "get_web_dash_email_preferences"
+      tags: ["Game Jolt dash"]
+      summary: "email-preferences"
+      description: "Observed in frontend source bundle(s): Bsr0NRsh.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["Bsr0NRsh.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/developer/games/api/data-storage/{id}":
+    get:
+      operationId: "get_web_dash_developer_games_api_data_storage_id"
+      tags: ["Game Jolt dash"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): BTNZhSCD.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["BTNZhSCD.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/communities/games/{id}":
+    get:
+      operationId: "get_web_dash_communities_games_id"
+      tags: ["Game Jolt dash"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): Bu9OnlfP2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["Bu9OnlfP2.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/communities/games/link":
+    post:
+      operationId: "post_web_dash_communities_games_link"
+      tags: ["Game Jolt dash"]
+      summary: "link"
+      description: "Observed in frontend source bundle(s): Bu9OnlfP2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["Bu9OnlfP2.js"]
+      x-request-body-expressions: ["{community_id:T.value.id,game_id:e.id}"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/communities/games/unlink":
+    post:
+      operationId: "post_web_dash_communities_games_unlink"
+      tags: ["Game Jolt dash"]
+      summary: "unlink"
+      description: "Observed in frontend source bundle(s): Bu9OnlfP2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["Bu9OnlfP2.js"]
+      x-request-body-expressions: ["{community_id:T.value.id,game_id:e.id}"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/forums/posts/get-post-url/{t}":
+    get:
+      operationId: "get_web_forums_posts_get_post_url_t"
+      tags: ["Game Jolt forums"]
+      summary: "t"
+      description: "Observed in frontend source bundle(s): BvH99d0X.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "t"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["BvH99d0X.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/financials/save":
+    post:
+      operationId: "post_web_dash_financials_save"
+      tags: ["Game Jolt dash"]
+      summary: "save"
+      description: "Observed in frontend source bundle(s): BWld0AqN.js, CwpKsR3y.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 2
+      x-source-bundles: ["BWld0AqN.js", "CwpKsR3y.js"]
+      x-request-body-expressions: ["P.formModel", "E.formModel"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/posts/recommendations/{id}":
+    get:
+      operationId: "get_web_posts_recommendations_id"
+      tags: ["Game Jolt posts"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): BY3V1Hqw.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["BY3V1Hqw.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/posts/view/{postId}":
+    get:
+      operationId: "get_web_posts_view_postId"
+      tags: ["Game Jolt posts"]
+      summary: "postId"
+      description: "Observed in frontend source bundle(s): BY3V1Hqw.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "postId"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["BY3V1Hqw.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/communities/blocks/{id}":
+    get:
+      operationId: "get_web_dash_communities_blocks_id"
+      tags: ["Game Jolt dash"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): BzNixCUH.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["BzNixCUH.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/communities/blocks/remove/{id}":
+    post:
+      operationId: "post_web_dash_communities_blocks_remove_id"
+      tags: ["Game Jolt dash"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): BzNixCUH.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["BzNixCUH.js"]
+      x-request-body-expressions: ["{}"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/addresses":
+    get:
+      operationId: "get_web_dash_addresses"
+      tags: ["Game Jolt dash"]
+      summary: "addresses"
+      description: "Observed in frontend source bundle(s): C0b-W3Zy2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["C0b-W3Zy2.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/forums/channels/{name}/archived":
+    get:
+      operationId: "get_web_forums_channels_name_archived"
+      tags: ["Game Jolt forums"]
+      summary: "archived"
+      description: "Observed in frontend source bundle(s): C3mBKOQd2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "name"
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: "page"
+          in: query
+          required: false
+          schema:
+            type: integer
+            default: 1
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["C3mBKOQd2.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/linked-accounts":
+    get:
+      operationId: "get_web_dash_linked_accounts"
+      tags: ["Game Jolt dash"]
+      summary: "linked-accounts"
+      description: "Observed in frontend source bundle(s): C405O4vT.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "resource"
+          in: query
+          required: true
+          schema:
+            type: string
+            enum: ["User"]
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["C405O4vT.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/linked-accounts/unlink/{provider}":
+    post:
+      operationId: "post_web_dash_linked_accounts_unlink_provider"
+      tags: ["Game Jolt dash"]
+      summary: "provider"
+      description: "Observed in frontend source bundle(s): C405O4vT.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "provider"
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: "resource"
+          in: query
+          required: true
+          schema:
+            type: string
+            enum: ["User"]
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["C405O4vT.js"]
+      x-request-body-expressions: ["{}"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/communities/activity/{id}":
+    get:
+      operationId: "get_web_dash_communities_activity_id"
+      tags: ["Game Jolt dash"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): C5g-VmAK.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: "from"
+          in: query
+          required: false
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["C5g-VmAK.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/sites":
+    get:
+      operationId: "get_web_dash_sites"
+      tags: ["Game Jolt dash"]
+      summary: "sites"
+      description: "Observed in frontend source bundle(s): C8kbY6Uv.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["C8kbY6Uv.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/developer/games/api/trophies/save-sort/{gameId}/{trophyId}":
+    post:
+      operationId: "post_web_dash_developer_games_api_trophies_save_sort_gameId_trophyId"
+      tags: ["Game Jolt dash"]
+      summary: "trophyId"
+      description: "Observed in frontend source bundle(s): C9lmnSys.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "gameId"
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: "trophyId"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["C9lmnSys.js"]
+      x-request-body-expressions: ["r"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/developer/games/music/{id}":
+    get:
+      operationId: "get_web_dash_developer_games_music_id"
+      tags: ["Game Jolt dash"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): Ca1MwaJP2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["Ca1MwaJP2.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/communities/collaborators/{id}":
+    get:
+      operationId: "get_web_communities_collaborators_id"
+      tags: ["Game Jolt communities"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): CALui58K.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["CALui58K.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/profile/trophies/all/@{username}":
+    get:
+      operationId: "get_web_profile_trophies_all_username"
+      tags: ["Game Jolt profile"]
+      summary: "@username"
+      description: "Observed in frontend source bundle(s): CcNDUKpd2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "username"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["CcNDUKpd2.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/discover/games/comment-overview/{id}":
+    get:
+      operationId: "get_web_discover_games_comment_overview_id"
+      tags: ["Game Jolt discover"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): CfJsM3lc2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["CfJsM3lc2.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/discover/games/trophies/{id}":
+    get:
+      operationId: "get_web_discover_games_trophies_id"
+      tags: ["Game Jolt discover"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): CFLdfWKB2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["CFLdfWKB2.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/blocks/add":
+    post:
+      operationId: "post_web_dash_blocks_add"
+      tags: ["Game Jolt dash"]
+      summary: "add"
+      description: "Observed in frontend source bundle(s): CFT04WwG2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["CFT04WwG2.js"]
+      x-request-body-expressions: ["i.formModel"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/blocks":
+    get:
+      operationId: "get_web_dash_blocks"
+      tags: ["Game Jolt dash"]
+      summary: "blocks"
+      description: "Observed in frontend source bundle(s): CFT04WwG2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["CFT04WwG2.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/blocks/more":
+    get:
+      operationId: "get_web_dash_blocks_more"
+      tags: ["Game Jolt dash"]
+      summary: "more"
+      description: "Observed in frontend source bundle(s): CFT04WwG2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "from"
+          in: query
+          required: false
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["CFT04WwG2.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/blocks/remove/{id}":
+    post:
+      operationId: "post_web_dash_blocks_remove_id"
+      tags: ["Game Jolt dash"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): CFT04WwG2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["CFT04WwG2.js"]
+      x-request-body-expressions: ["{}"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/marketplace":
+    get:
+      operationId: "get_web_marketplace"
+      tags: ["Game Jolt marketplace"]
+      summary: "marketplace"
+      description: "Observed in frontend source bundle(s): CG5wX9Fc.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["CG5wX9Fc.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/developer/games/description":
+    get:
+      operationId: "get_web_dash_developer_games_description"
+      tags: ["Game Jolt dash"]
+      summary: "description"
+      description: "Observed in frontend source bundle(s): CgbAcjcv2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["CgbAcjcv2.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/developer/games/add":
+    get:
+      operationId: "get_web_dash_developer_games_add"
+      tags: ["Game Jolt dash"]
+      summary: "add"
+      description: "Observed in frontend source bundle(s): CmKNJRXn.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["CmKNJRXn.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/media-items/add-one":
+    post:
+      operationId: "post_web_dash_media_items_add_one"
+      tags: ["Game Jolt dash"]
+      summary: "add-one"
+      description: "Observed in frontend source bundle(s): CmrouJ4L.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["CmrouJ4L.js"]
+      x-request-body-expressions: ["{type:t,parent_id:r}"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/content/temp-resource-id/{e}":
+    post:
+      operationId: "post_web_content_temp_resource_id_e"
+      tags: ["Game Jolt content"]
+      summary: "e"
+      description: "Observed in frontend source bundle(s): CmrouJ4L.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "e"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["CmrouJ4L.js"]
+      x-request-body-expressions: ["t||{}"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/content/tenor/categories":
+    get:
+      operationId: "get_web_content_tenor_categories"
+      tags: ["Game Jolt content"]
+      summary: "categories"
+      description: "Observed in frontend source bundle(s): CmrouJ4L.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["CmrouJ4L.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/content/tenor/register-share/{id}":
+    post:
+      operationId: "post_web_content_tenor_register_share_id"
+      tags: ["Game Jolt content"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): CmrouJ4L.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["CmrouJ4L.js"]
+      x-request-body-expressions: ["{}"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/library/games/{collectionType}/{id}":
+    get:
+      operationId: "get_web_library_games_collectionType_id"
+      tags: ["Game Jolt library"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): Cpjl9CpN.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "collectionType"
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["Cpjl9CpN.js"]
+      x-unresolved-query-expression: "collection filter query builder"
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/developer/games/save-sort":
+    post:
+      operationId: "post_web_dash_developer_games_save_sort"
+      tags: ["Game Jolt dash"]
+      summary: "save-sort"
+      description: "Observed in frontend source bundle(s): Cpjl9CpN.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["Cpjl9CpN.js"]
+      x-request-body-expressions: ["{game_ids:e.map(e=>e.id)}"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/library/games/{mode}/{collectionType}/{id}":
+    get:
+      operationId: "get_web_library_games_mode_collectionType_id"
+      tags: ["Game Jolt library"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): Cpjl9CpN.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "mode"
+          in: path
+          required: true
+          schema:
+            type: string
+            enum: ["mix", "refresh-mix"]
+        - name: "collectionType"
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["Cpjl9CpN.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/communities/competitions/{id}/{channel}":
+    get:
+      operationId: "get_web_dash_communities_competitions_id_channel"
+      tags: ["Game Jolt dash"]
+      summary: "channel"
+      description: "Observed in frontend source bundle(s): CRXAEvN_2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: "channel"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["CRXAEvN_2.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/creators/shop/change-requests/cancel/{id}":
+    post:
+      operationId: "post_web_dash_creators_shop_change_requests_cancel_id"
+      tags: ["Game Jolt dash"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): Csin2f7W.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["Csin2f7W.js"]
+      x-request-body-expressions: ["{}"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/games/tags/tag/{gameId}/{tag}":
+    get:
+      operationId: "get_games_tags_tag_gameId_tag"
+      tags: ["Moderation"]
+      summary: "tag"
+      description: "Observed in frontend source bundle(s): CwA3_FkW.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "gameId"
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: "tag"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["CwA3_FkW.js"]
+      servers:
+        - url: https://gamejolt.com/moderate
+          description: Source overrides the helper path prefix to /moderate; live behavior was not tested.
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/games/tags/untag/{gameId}/{tag}":
+    get:
+      operationId: "get_games_tags_untag_gameId_tag"
+      tags: ["Moderation"]
+      summary: "tag"
+      description: "Observed in frontend source bundle(s): CwA3_FkW.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "gameId"
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: "tag"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["CwA3_FkW.js"]
+      servers:
+        - url: https://gamejolt.com/moderate
+          description: Source overrides the helper path prefix to /moderate; live behavior was not tested.
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/financials/account":
+    get:
+      operationId: "get_web_dash_financials_account"
+      tags: ["Game Jolt dash"]
+      summary: "account"
+      description: "Observed in frontend source bundle(s): CwpKsR3y.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["CwpKsR3y.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+    post:
+      operationId: "post_web_dash_financials_account"
+      tags: ["Game Jolt dash"]
+      summary: "account"
+      description: "Observed in frontend source bundle(s): CwpKsR3y.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["CwpKsR3y.js"]
+      x-request-body-expressions: ["e"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/financials/get-paypal-auth":
+    get:
+      operationId: "get_web_dash_financials_get_paypal_auth"
+      tags: ["Game Jolt dash"]
+      summary: "get-paypal-auth"
+      description: "Observed in frontend source bundle(s): CwpKsR3y.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["CwpKsR3y.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/home":
+    get:
+      operationId: "get_web_dash_home"
+      tags: ["Game Jolt dash"]
+      summary: "home"
+      description: "Observed in frontend source bundle(s): CXddxlio2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["CXddxlio2.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/profile/card/{id}":
+    get:
+      operationId: "get_web_profile_card_id"
+      tags: ["Game Jolt profile"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): CzFD0QMA.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["CzFD0QMA.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/developer/games/media/{id}":
+    get:
+      operationId: "get_web_dash_developer_games_media_id"
+      tags: ["Game Jolt dash"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): CzL9E06F2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["CzL9E06F2.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/developer/games/overview/{id}":
+    get:
+      operationId: "get_web_dash_developer_games_overview_id"
+      tags: ["Game Jolt dash"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): D1dJNY0f2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["D1dJNY0f2.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/profile/trophies/@{username}":
+    get:
+      operationId: "get_web_profile_trophies_username"
+      tags: ["Game Jolt profile"]
+      summary: "@username"
+      description: "Observed in frontend source bundle(s): D1jRNsNE2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "username"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["D1jRNsNE2.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/profile/overview/@{username}":
+    get:
+      operationId: "get_web_profile_overview_username"
+      tags: ["Game Jolt profile"]
+      summary: "@username"
+      description: "Observed in frontend source bundle(s): D622G48I.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "username"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["D622G48I.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/timezones/get-list":
+    get:
+      operationId: "get_web_timezones_get_list"
+      tags: ["Game Jolt timezones"]
+      summary: "get-list"
+      description: "Observed in frontend source bundle(s): D7eisc-Z.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["D7eisc-Z.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/posts/article/{id}":
+    get:
+      operationId: "get_web_posts_article_id"
+      tags: ["Game Jolt posts"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): DafXpkcN2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["DafXpkcN2.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/posts/manage/remove-video/{id}":
+    post:
+      operationId: "post_web_posts_manage_remove_video_id"
+      tags: ["Game Jolt posts"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): DafXpkcN2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["DafXpkcN2.js"]
+      x-request-body-expressions: ["{}"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/communities/channels/{id}/{channel}":
+    get:
+      operationId: "get_web_dash_communities_channels_id_channel"
+      tags: ["Game Jolt dash"]
+      summary: "channel"
+      description: "Observed in frontend source bundle(s): DBLMYgB5.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: "channel"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["DBLMYgB5.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/developer/games/settings/view/{id}":
+    get:
+      operationId: "get_web_dash_developer_games_settings_view_id"
+      tags: ["Game Jolt dash"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): DBuyQ2G9.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["DBuyQ2G9.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/developer/games/packages/{id}":
+    get:
+      operationId: "get_web_dash_developer_games_packages_id"
+      tags: ["Game Jolt dash"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): DBzdxzQZ.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["DBzdxzQZ.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/developer/games/api/{id}":
+    get:
+      operationId: "get_web_dash_developer_games_api_id"
+      tags: ["Game Jolt dash"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): Df8ad-6u.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["Df8ad-6u.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/profile/@{username}":
+    get:
+      operationId: "get_web_profile_username"
+      tags: ["Game Jolt profile"]
+      summary: "@username"
+      description: "Observed in frontend source bundle(s): DH_jDAkK.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "username"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["DH_jDAkK.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/discover/games/builds/get-download-url/{id}":
+    post:
+      operationId: "post_web_discover_games_builds_get_download_url_id"
+      tags: ["Game Jolt discover"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): DI3zTNVg2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["DI3zTNVg2.js"]
+      x-request-body-expressions: ["r"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/developer/games/packages/save-sort/{e}":
+    post:
+      operationId: "post_web_dash_developer_games_packages_save_sort_e"
+      tags: ["Game Jolt dash"]
+      summary: "e"
+      description: "Observed in frontend source bundle(s): DI3zTNVg2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "e"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["DI3zTNVg2.js"]
+      x-request-body-expressions: ["n"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/library/games/add/followed":
+    post:
+      operationId: "post_web_library_games_add_followed"
+      tags: ["Game Jolt library"]
+      summary: "followed"
+      description: "Observed in frontend source bundle(s): DI3zTNVg2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["DI3zTNVg2.js"]
+      x-request-body-expressions: ["{game_id:e.id,timestamp:Date.now()}"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/communities/games/save-sort/{id}":
+    post:
+      operationId: "post_web_dash_communities_games_save_sort_id"
+      tags: ["Game Jolt dash"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): DI3zTNVg2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["DI3zTNVg2.js"]
+      x-request-body-expressions: ["e.games.map(e=>e.id)"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/communities/join/{path}":
+    post:
+      operationId: "post_web_communities_join_path"
+      tags: ["Game Jolt communities"]
+      summary: "path"
+      description: "Observed in frontend source bundle(s): DI3zTNVg2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "path"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["DI3zTNVg2.js"]
+      x-request-body-expressions: ["{}"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/communities/leave/{path}":
+    post:
+      operationId: "post_web_communities_leave_path"
+      tags: ["Game Jolt communities"]
+      summary: "path"
+      description: "Observed in frontend source bundle(s): DI3zTNVg2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "path"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["DI3zTNVg2.js"]
+      x-request-body-expressions: ["{}"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/forums/posts/replies/{id}":
+    get:
+      operationId: "get_web_forums_posts_replies_id"
+      tags: ["Game Jolt forums"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): DiHkLFzp2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["DiHkLFzp2.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/forums/posts/parent/{id}":
+    get:
+      operationId: "get_web_forums_posts_parent_id"
+      tags: ["Game Jolt forums"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): DiHkLFzp2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["DiHkLFzp2.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/touch":
+    get:
+      operationId: "get_web_touch"
+      tags: ["Game Jolt touch"]
+      summary: "touch"
+      description: "Observed in frontend source bundle(s): DL8adKgN2.js, DLy2XueY.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 2
+      x-source-bundles: ["DL8adKgN2.js", "DLy2XueY.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/timeout/clear-resource":
+    post:
+      operationId: "post_web_dash_timeout_clear_resource"
+      tags: ["Game Jolt dash"]
+      summary: "clear-resource"
+      description: "Observed in frontend source bundle(s): DL8adKgN2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["DL8adKgN2.js"]
+      x-request-body-expressions: ["{}"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/communities/view/{path}":
+    get:
+      operationId: "get_web_communities_view_path"
+      tags: ["Game Jolt communities"]
+      summary: "path"
+      description: "Observed in frontend source bundle(s): DlgefTN0.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "path"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["DlgefTN0.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/profile/follow/{id}":
+    post:
+      operationId: "post_web_profile_follow_id"
+      tags: ["Game Jolt profile"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): DLy2XueY.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["DLy2XueY.js"]
+      x-request-body-expressions: ["{data:{timestamp:Date.now()}}"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/profile/unfollow/{id}":
+    post:
+      operationId: "post_web_profile_unfollow_id"
+      tags: ["Game Jolt profile"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): DLy2XueY.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["DLy2XueY.js"]
+      x-request-body-expressions: ["{data:{timestamp:Date.now()}}"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/theme-presets":
+    get:
+      operationId: "get_web_theme_presets"
+      tags: ["Game Jolt theme-presets"]
+      summary: "theme-presets"
+      description: "Observed in frontend source bundle(s): DMFAI3Bs2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["DMFAI3Bs2.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/developer/games/api/scores/{id}":
+    get:
+      operationId: "get_web_dash_developer_games_api_scores_id"
+      tags: ["Game Jolt dash"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): DqiACRKH2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["DqiACRKH2.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/purchases":
+    get:
+      operationId: "get_web_dash_purchases"
+      tags: ["Game Jolt dash"]
+      summary: "purchases"
+      description: "Observed in frontend source bundle(s): DQY2_qi6.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["DQY2_qi6.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/developer/games/key-groups/add-keys/{gameId}/{keyGroupId}":
+    post:
+      operationId: "post_web_dash_developer_games_key_groups_add_keys_gameId_keyGroupId"
+      tags: ["Game Jolt dash"]
+      summary: "keyGroupId"
+      description: "Observed in frontend source bundle(s): DTd8WOOU.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "gameId"
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: "keyGroupId"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["DTd8WOOU.js"]
+      x-request-body-expressions: ["c.formModel"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/developer/games/key-groups/{gameId}/{keyGroupId}":
+    get:
+      operationId: "get_web_dash_developer_games_key_groups_gameId_keyGroupId"
+      tags: ["Game Jolt dash"]
+      summary: "keyGroupId"
+      description: "Observed in frontend source bundle(s): DTd8WOOU.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "gameId"
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: "keyGroupId"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["DTd8WOOU.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/developer/games/key-groups/search-keys/{id}/{keyGroupId}":
+    post:
+      operationId: "post_web_dash_developer_games_key_groups_search_keys_id_keyGroupId"
+      tags: ["Game Jolt dash"]
+      summary: "keyGroupId"
+      description: "Observed in frontend source bundle(s): DTd8WOOU.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: "keyGroupId"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["DTd8WOOU.js"]
+      x-request-body-expressions: ["I.value"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/communities/blocks/add/{id}":
+    post:
+      operationId: "post_web_dash_communities_blocks_add_id"
+      tags: ["Game Jolt dash"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): DudDBe9N2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["DudDBe9N2.js"]
+      x-request-body-expressions: ["J.formModel"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/developer/games/api/settings/{id}":
+    get:
+      operationId: "get_web_dash_developer_games_api_settings_id"
+      tags: ["Game Jolt dash"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): Duqnj0JR2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["Duqnj0JR2.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/developer/games/api/settings/generate-new-key/{id}":
+    post:
+      operationId: "post_web_dash_developer_games_api_settings_generate_new_key_id"
+      tags: ["Game Jolt dash"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): Duqnj0JR2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["Duqnj0JR2.js"]
+      x-request-body-expressions: ["{}"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/developer/games/collaborators/{id}":
+    get:
+      operationId: "get_web_dash_developer_games_collaborators_id"
+      tags: ["Game Jolt dash"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): DWD6qmyf2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["DWD6qmyf2.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/comments/get-thread/{t}":
+    get:
+      operationId: "get_comments_get_thread_t"
+      tags: ["Comments"]
+      summary: "t"
+      description: "Observed in frontend source bundle(s): DwMPdUwE.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "t"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["DwMPdUwE.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/communities/collaborators/{id}":
+    get:
+      operationId: "get_web_dash_communities_collaborators_id"
+      tags: ["Game Jolt dash"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): DxSbJB922.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["DxSbJB922.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/developer/games/api/scores/list-table-user-scores/{id}/{table}/{user}":
+    get:
+      operationId: "get_web_dash_developer_games_api_scores_list_table_user_scores_id_table_user"
+      tags: ["Game Jolt dash"]
+      summary: "user"
+      description: "Observed in frontend source bundle(s): DxZF_l2w2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: "table"
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: "user"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["DxZF_l2w2.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/purchases/order/{hash}":
+    get:
+      operationId: "get_web_dash_purchases_order_hash"
+      tags: ["Game Jolt dash"]
+      summary: "hash"
+      description: "Observed in frontend source bundle(s): DZ8feiqY.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "hash"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["DZ8feiqY.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/developer/games/api/scores/save-table-sort/{t}":
+    post:
+      operationId: "post_web_dash_developer_games_api_scores_save_table_sort_t"
+      tags: ["Game Jolt dash"]
+      summary: "t"
+      description: "Observed in frontend source bundle(s): eaKcLpoU2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "t"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["eaKcLpoU2.js"]
+      x-request-body-expressions: ["n"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/developer/games/api/scores/remove-table-user-scores/{r}":
+    post:
+      operationId: "post_web_dash_developer_games_api_scores_remove_table_user_scores_r"
+      tags: ["Game Jolt dash"]
+      summary: "r"
+      description: "Observed in frontend source bundle(s): eaKcLpoU2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "r"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["eaKcLpoU2.js"]
+      x-request-body-expressions: ["{}"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/discover":
+    get:
+      operationId: "get_web_discover"
+      tags: ["Game Jolt discover"]
+      summary: "discover"
+      description: "Observed in frontend source bundle(s): EV_Sxbee2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["EV_Sxbee2.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/realms/follow/{path}":
+    post:
+      operationId: "post_web_realms_follow_path"
+      tags: ["Game Jolt realms"]
+      summary: "path"
+      description: "Observed in frontend source bundle(s): fccKbDqi2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "path"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["fccKbDqi2.js"]
+      x-request-body-expressions: ["{}"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/realms/unfollow/{path}":
+    post:
+      operationId: "post_web_realms_unfollow_path"
+      tags: ["Game Jolt realms"]
+      summary: "path"
+      description: "Observed in frontend source bundle(s): fccKbDqi2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "path"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["fccKbDqi2.js"]
+      x-request-body-expressions: ["{}"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/profile/trophies/overview/@{username}":
+    get:
+      operationId: "get_web_profile_trophies_overview_username"
+      tags: ["Game Jolt profile"]
+      summary: "@username"
+      description: "Observed in frontend source bundle(s): FjmgllL92.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "username"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["FjmgllL92.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/account/set-password":
+    post:
+      operationId: "post_web_dash_account_set_password"
+      tags: ["Game Jolt dash"]
+      summary: "set-password"
+      description: "Observed in frontend source bundle(s): gghRUU2-.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["gghRUU2-.js"]
+      x-request-body-expressions: ["{old_password:u.formModel.old_password,password:u.formModel.password}"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/account/has-password":
+    get:
+      operationId: "get_web_dash_account_has_password"
+      tags: ["Game Jolt dash"]
+      summary: "has-password"
+      description: "Observed in frontend source bundle(s): gghRUU2-.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["gghRUU2-.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/developer/games/api/scores/list-table-scores/{id}/{table}":
+    get:
+      operationId: "get_web_dash_developer_games_api_scores_list_table_scores_id_table"
+      tags: ["Game Jolt dash"]
+      summary: "table"
+      description: "Observed in frontend source bundle(s): kJSfhNXD2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: "table"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["kJSfhNXD2.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/developer/games/key-groups/{id}":
+    get:
+      operationId: "get_web_dash_developer_games_key_groups_id"
+      tags: ["Game Jolt dash"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): kPsftDyd.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["kPsftDyd.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/developer/games/media/save/image/{game_id}":
+    post:
+      operationId: "post_web_dash_developer_games_media_save_image_game_id"
+      tags: ["Game Jolt dash"]
+      summary: "game_id"
+      description: "Observed in frontend source bundle(s): lIy7XT4i.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "game_id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["lIy7XT4i.js"]
+      x-request-body-expressions: ["t"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/developer/games/media/save-sort/{id}":
+    post:
+      operationId: "post_web_dash_developer_games_media_save_sort_id"
+      tags: ["Game Jolt dash"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): lR9hWqSR.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["lR9hWqSR.js"]
+      x-request-body-expressions: ["k.value"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/content/hydrate":
+    post:
+      operationId: "post_web_content_hydrate"
+      tags: ["Game Jolt content"]
+      summary: "hydrate"
+      description: "Observed in frontend source bundle(s): LZz-rmBg.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["LZz-rmBg.js"]
+      x-request-body-expressions: ["r"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/auth/join":
+    post:
+      operationId: "post_web_auth_join"
+      tags: ["Game Jolt auth"]
+      summary: "join"
+      description: "Observed in frontend source bundle(s): nGYPA9YZ2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["nGYPA9YZ2.js"]
+      x-request-body-expressions: ["m.formModel"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/auth/check":
+    get:
+      operationId: "get_web_auth_check"
+      tags: ["Game Jolt auth"]
+      summary: "check"
+      description: "Observed in frontend source bundle(s): nGYPA9YZ2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["nGYPA9YZ2.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/developer/games/api/data-storage/{id}/{item}":
+    get:
+      operationId: "get_web_dash_developer_games_api_data_storage_id_item"
+      tags: ["Game Jolt dash"]
+      summary: "item"
+      description: "Observed in frontend source bundle(s): nTJBJvJO.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: "item"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["nTJBJvJO.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/developer/games/releases/{id}/{packageId}/{releaseId}":
+    get:
+      operationId: "get_web_dash_developer_games_releases_id_packageId_releaseId"
+      tags: ["Game Jolt dash"]
+      summary: "releaseId"
+      description: "Observed in frontend source bundle(s): p6YUNGW3.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: "packageId"
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: "releaseId"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["p6YUNGW3.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/developer/games/api/trophies/{id}":
+    get:
+      operationId: "get_web_dash_developer_games_api_trophies_id"
+      tags: ["Game Jolt dash"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): pCrWK0pG2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["pCrWK0pG2.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/sites/{id}":
+    get:
+      operationId: "get_web_dash_sites_id"
+      tags: ["Game Jolt dash"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): s1frgkOy.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["s1frgkOy.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/profile/trophies/game/@{username}/{id}":
+    get:
+      operationId: "get_web_profile_trophies_game_username_id"
+      tags: ["Game Jolt profile"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): shwKh3r-2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "username"
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["shwKh3r-2.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/discover/games/audio/get-soundtrack-download-url/{id}":
+    get:
+      operationId: "get_web_discover_games_audio_get_soundtrack_download_url_id"
+      tags: ["Game Jolt discover"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): sLR63Ymk2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["sLR63Ymk2.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/developer/games/music/save-sort/{t}":
+    post:
+      operationId: "post_web_dash_developer_games_music_save_sort_t"
+      tags: ["Game Jolt dash"]
+      summary: "t"
+      description: "Observed in frontend source bundle(s): sLR63Ymk2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "t"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["sLR63Ymk2.js"]
+      x-request-body-expressions: ["n"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/sites/upload-build/{id}":
+    post:
+      operationId: "post_web_dash_sites_upload_build_id"
+      tags: ["Game Jolt dash"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): TgtmcsVt.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["TgtmcsVt.js"]
+      x-request-body-expressions: ["{}"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/sites/activate-primary-build/{id}":
+    post:
+      operationId: "post_web_dash_sites_activate_primary_build_id"
+      tags: ["Game Jolt dash"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): TgtmcsVt.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["TgtmcsVt.js"]
+      x-request-body-expressions: ["{}"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/forums/active-topics":
+    get:
+      operationId: "get_web_forums_active_topics"
+      tags: ["Game Jolt forums"]
+      summary: "active-topics"
+      description: "Observed in frontend source bundle(s): U6YPGUnt2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["U6YPGUnt2.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/communities/fetch-archived-channels/{path}":
+    get:
+      operationId: "get_web_communities_fetch_archived_channels_path"
+      tags: ["Game Jolt communities"]
+      summary: "path"
+      description: "Observed in frontend source bundle(s): UrHA8omn.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "path"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["UrHA8omn.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/communities/{id}":
+    get:
+      operationId: "get_web_dash_communities_id"
+      tags: ["Game Jolt dash"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): V5Aj0S7Q.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["V5Aj0S7Q.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/communities/mark-as-read/{path}/{title}":
+    post:
+      operationId: "post_web_communities_mark_as_read_path_title"
+      tags: ["Game Jolt communities"]
+      summary: "title"
+      description: "Observed in frontend source bundle(s): w35xzBX7.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "path"
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: "title"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["w35xzBX7.js"]
+      x-request-body-expressions: ["{}"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/profile/trophies/site/@{username}":
+    get:
+      operationId: "get_web_profile_trophies_site_username"
+      tags: ["Game Jolt profile"]
+      summary: "@username"
+      description: "Observed in frontend source bundle(s): WZeqX_jO2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "username"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["WZeqX_jO2.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/communities/competitions/awards/{id}/{channel}":
+    get:
+      operationId: "get_web_dash_communities_competitions_awards_id_channel"
+      tags: ["Game Jolt dash"]
+      summary: "channel"
+      description: "Observed in frontend source bundle(s): xvGvSW23.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: "channel"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["xvGvSW23.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/communities/competitions/awards/save-entry-sort/{e}":
+    post:
+      operationId: "post_web_dash_communities_competitions_awards_save_entry_sort_e"
+      tags: ["Game Jolt dash"]
+      summary: "e"
+      description: "Observed in frontend source bundle(s): YFZXz_Op.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "e"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["YFZXz_Op.js"]
+      x-request-body-expressions: ["t"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/communities/competitions/awards/entry-assign/{t}/{e}":
+    post:
+      operationId: "post_web_dash_communities_competitions_awards_entry_assign_t_e"
+      tags: ["Game Jolt dash"]
+      summary: "e"
+      description: "Observed in frontend source bundle(s): YFZXz_Op.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "t"
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: "e"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["YFZXz_Op.js"]
+      x-request-body-expressions: ["{}"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/communities/competitions/awards/entry-unassign/{t}/{e}":
+    post:
+      operationId: "post_web_dash_communities_competitions_awards_entry_unassign_t_e"
+      tags: ["Game Jolt dash"]
+      summary: "e"
+      description: "Observed in frontend source bundle(s): YFZXz_Op.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "t"
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: "e"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["YFZXz_Op.js"]
+      x-request-body-expressions: ["{}"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/communities/channels/save-sort/{t}":
+    post:
+      operationId: "post_web_dash_communities_channels_save_sort_t"
+      tags: ["Game Jolt dash"]
+      summary: "t"
+      description: "Observed in frontend source bundle(s): yg_IAvsL2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "t"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["yg_IAvsL2.js"]
+      x-request-body-expressions: ["n"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/communities/channels/save-sort-archived/{t}":
+    post:
+      operationId: "post_web_dash_communities_channels_save_sort_archived_t"
+      tags: ["Game Jolt dash"]
+      summary: "t"
+      description: "Observed in frontend source bundle(s): yg_IAvsL2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "t"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["yg_IAvsL2.js"]
+      x-request-body-expressions: ["n"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/landing/creator":
+    get:
+      operationId: "get_web_landing_creator"
+      tags: ["Game Jolt landing"]
+      summary: "creator"
+      description: "Observed in frontend source bundle(s): ZpwWzaaF.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["ZpwWzaaF.js"]
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/download/info/{id}":
+    get:
+      operationId: "get_web_download_info_id"
+      tags: ["Game Jolt download"]
+      summary: "id"
+      description: "Observed in frontend source bundle(s): BW8byxeR2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      parameters:
+        - name: "id"
+          in: path
+          required: true
+          schema:
+            type: string
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["BW8byxeR2.js"]
+      x-unresolved-query-expression: "${r.join(\"&\")}"
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/activity/notifications":
+    post:
+      operationId: "post_web_dash_activity_notifications"
+      tags: ["Game Jolt dash"]
+      summary: "notifications"
+      description: "Observed in frontend source bundle(s): D-ytPRcn2.js. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED FROM SOURCE"
+      x-live-status: "UNVERIFIED"
+      x-frontend-call-count: 1
+      x-source-bundles: ["D-ytPRcn2.js"]
+      x-request-body-expressions: ["{[K]:J(e,`f`)}"]
+      x-unresolved-query-expression: "Feed URL helper adds pagination options"
+      responses:
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/library":
+    get:
+      operationId: "get_web_library"
+      tags: ["Game Jolt library"]
+      summary: "library"
+      description: "Observed in frontend source bundle(s): authenticated-live-get. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED LIVE"
+      x-live-status: "HTTP 200 observed; response schema inspection limited"
+      x-frontend-call-count: 1
+      x-source-bundles: ["authenticated-live-get"]
+      responses:
+        '200':
+          description: HTTP 200 observed in a read-only request; the complete response schema is not documented.
+        default:
+          description: Status codes and response body have not been verified.
+  "/web/dash/shell":
+    get:
+      operationId: "get_web_dash_shell"
+      tags: ["Game Jolt dash"]
+      summary: "shell"
+      description: "Observed in frontend source bundle(s): authenticated-live-get. Request schema, response body, response status, and authentication requirements were not fully verified. No live request was made."
+      x-audit-classification: "VERIFIED LIVE"
+      x-live-status: "HTTP 200 observed; response schema inspection limited"
+      x-frontend-call-count: 1
+      x-source-bundles: ["authenticated-live-get"]
+      responses:
+        '200':
+          description: HTTP 200 observed in a read-only request; the complete response schema is not documented.
+        default:
+          description: Status codes and response body have not been verified.
+  "/tick/{event}":
+    get:
+      servers:
+        - url: https://gamejolt.com
+          description: Site host; the tracking path is outside /site-api.
+      operationId: trackEvent
+      tags: ["Game Jolt tracking"]
+      summary: Record frontend event
+      description: The frontend sends a 1-pixel image request to record an event. This can track user activity and was not called.
+      parameters:
+        - name: event
+          in: path
+          required: true
+          schema: { type: string }
+        - name: cb
+          in: query
+          required: true
+          description: Millisecond timestamp used as a cache buster.
+          schema: { type: string }
+        - name: os
+          in: query
+          required: true
+          description: Value returned by the frontend operating-system helper; accepted values are unknown.
+          schema: { type: string }
+        - name: arch
+          in: query
+          required: false
+          description: Value returned by the frontend architecture helper when available.
+          schema: { type: string }
+        - name: source
+          in: query
+          required: false
+          description: Source referrer associated with a resource when available.
+          schema: { type: string }
+        - name: ref
+          in: query
+          required: false
+          description: Stored partner reference when available.
+          schema: { type: string }
+        - name: key
+          in: query
+          required: false
+          schema: { type: string }
+        - name: feed
+          in: query
+          required: false
+          schema: { type: string }
+      x-audit-classification: VERIFIED FROM SOURCE
+      x-live-status: UNVERIFIED; not called because it tracks activity
+      x-source-bundles: ["BzEXEYTf2.js"]
+      responses:
+        default:
+          description: Status codes and response body were not verified.
+  "/tick/{event}/{resource}":
+    get:
+      servers:
+        - url: https://gamejolt.com
+          description: Site host; the tracking path is outside /site-api.
+      operationId: trackResourceEvent
+      tags: ["Game Jolt tracking"]
+      summary: Record resource event
+      description: The frontend sends a 1-pixel image request with an optional resource path segment. This can track user activity and was not called.
+      parameters:
+        - name: event
+          in: path
+          required: true
+          schema: { type: string }
+        - name: resource
+          in: path
+          required: true
+          description: Optional second path segment supplied by the caller.
+          schema: { type: string }
+        - name: cb
+          in: query
+          required: true
+          description: Millisecond timestamp used as a cache buster.
+          schema: { type: string }
+        - name: os
+          in: query
+          required: true
+          description: Value returned by the frontend operating-system helper; accepted values are unknown.
+          schema: { type: string }
+        - name: arch
+          in: query
+          required: false
+          schema: { type: string }
+        - name: source
+          in: query
+          required: false
+          schema: { type: string }
+        - name: ref
+          in: query
+          required: false
+          schema: { type: string }
+        - name: key
+          in: query
+          required: false
+          schema: { type: string }
+        - name: feed
+          in: query
+          required: false
+          schema: { type: string }
+      x-audit-classification: VERIFIED FROM SOURCE
+      x-live-status: UNVERIFIED; not called because it tracks activity
+      x-source-bundles: ["BzEXEYTf2.js"]
+      responses:
+        default:
+          description: Status codes and response body were not verified.
+components:
+  schemas:
+    DiscoverGamesResponse:
+      type: object
+      properties:
+        ver:
+          type: string
+        user:
+          description: Null in anonymous responses; object in the signed-in sample.
+          oneOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/UserContext'
+        c:
+          type: object
+          properties:
+            eea:
+              type: boolean
+            ads:
+              type: boolean
+          additionalProperties: true
+        t:
+          type: array
+          items: {}
+        payload:
+          type: object
+          properties:
+            games:
+              type: array
+              items:
+                $ref: '#/components/schemas/GameListingItem'
+            gamesCount:
+              type: integer
+            perPage:
+              type: integer
+          additionalProperties: true
+      additionalProperties: true
+    UserContext:
+      type: object
+      description: Fields observed in the signed-in listing response. Field presence in other account states is unknown.
+      properties:
+        id: { type: integer }
+        type: { type: string }
+        username: { type: string }
+        name: { type: string }
+        display_name: { type: string }
+        web_site: { type: string }
+        url: { type: string }
+        slug: { type: string }
+        img_avatar: { type: string }
+        shouts_enabled: { type: boolean }
+        friend_requests_enabled: { type: boolean }
+        is_spawnday: { type: boolean }
+        status: { type: integer }
+        permission_level: { type: integer }
+        created_on: { type: integer }
+        theme:
+          description: Null in the signed-in sample; non-null variants are unverified.
+          oneOf:
+            - type: 'null'
+            - type: object
+              additionalProperties: true
+        follower_count: { type: integer }
+        following_count: { type: integer }
+        avatar_frame:
+          description: Null in the signed-in sample; non-null variants are unverified.
+          oneOf:
+            - type: 'null'
+            - type: object
+              additionalProperties: true
+        is_following: { type: boolean }
+        follows_you: { type: boolean }
+        is_blocked: { type: boolean }
+        blocked_you: { type: boolean }
+        can_join_communities: { type: boolean }
+        can_create_communities: { type: boolean }
+        level: { type: number }
+        experience: { type: number }
+        experience_next: { type: number }
+        level_next_percentage: { type: number }
+      additionalProperties: true
+    GameListingItem:
+      type: object
+      description: The listed top-level fields appeared on all 45 anonymous FNF listing items sampled. Nested objects may include other fields; not all variants were sampled.
+      properties:
+        id:
+          type: integer
+        developer:
+          $ref: '#/components/schemas/DeveloperSummary'
+        title:
+          type: string
+        slug:
+          type: string
+        path:
+          type: string
+        img_thumbnail:
+          type: string
+        header_media_item:
+          oneOf:
+            - $ref: '#/components/schemas/MediaItem'
+            - type: 'null'
+        thumbnail_media_item:
+          $ref: '#/components/schemas/MediaItem'
+        media_count:
+          type: integer
+        follower_count:
+          type: integer
+        ratings_enabled:
+          type: boolean
+        referrals_enabled:
+          type: boolean
+        compatibility:
+          type: object
+          description: OS capability keys vary across sampled items.
+          properties:
+            id:
+              type: integer
+            game_id:
+              type: integer
+            os_windows:
+              type: boolean
+            os_windows_64:
+              type: boolean
+            os_mac:
+              type: boolean
+            os_mac_64:
+              type: boolean
+            os_linux:
+              type: boolean
+            os_linux_64:
+              type: boolean
+            os_other:
+              type: boolean
+          additionalProperties: true
+        modified_on:
+          type: integer
+        posted_on:
+          type: integer
+        published_on:
+          type: integer
+        status:
+          type: integer
+        development_status:
+          type: integer
+        canceled:
+          type: boolean
+        tigrs_age:
+          type: integer
+        has_adult_content:
+          type: boolean
+        theme:
+          type: object
+          description: Preset and custom theme variants were observed.
+          additionalProperties: true
+        should_show_ads:
+          type: boolean
+        sellable:
+          type: object
+          description: Includes nested resource data; some nested fields were not inspected.
+          additionalProperties: true
+        comments_enabled:
+          type: boolean
+        is_following:
+          type: boolean
+          description: Present in the signed-in response; absent from the anonymous samples.
+        perms:
+          type: 'null'
+          description: Null on all 36 game items in the signed-in sample; other values are unknown.
+      additionalProperties: true
+    DeveloperSummary:
+      type: object
+      properties:
+        id:
+          type: integer
+        type:
+          type: string
+        username:
+          type: string
+        name:
+          type: string
+        display_name:
+          type: string
+        web_site:
+          type: string
+        url:
+          type: string
+        slug:
+          type: string
+        img_avatar:
+          type: string
+        shouts_enabled:
+          type: boolean
+        friend_requests_enabled:
+          type: boolean
+        is_spawnday:
+          type: boolean
+        status:
+          type: integer
+        permission_level:
+          type: integer
+        created_on:
+          type: integer
+        theme:
+          type: object
+          additionalProperties: true
+        follower_count:
+          type: integer
+        following_count:
+          type: integer
+        avatar_frame:
+          type: [object, 'null']
+          additionalProperties: true
+      additionalProperties: true
+    MediaItem:
+      type: object
+      properties:
+        id:
+          type: integer
+        type:
+          type: string
+        parent_id:
+          type: integer
+        hash:
+          type: string
+        filename:
+          type: string
+        filetype:
+          type: string
+        is_animated:
+          type: boolean
+        width:
+          type: integer
+        height:
+          type: integer
+        filesize:
+          type: integer
+        crop_start_x:
+          type: [number, 'null']
+        crop_start_y:
+          type: [number, 'null']
+        crop_end_x:
+          type: [number, 'null']
+        crop_end_y:
+          type: [number, 'null']
+        avg_img_color:
+          type: string
+        img_has_transparency:
+          type: boolean
+        added_on:
+          type: integer
+        status:
+          type: string
+        img_url:
+          type: string
+        mediaserver_url:
+          type: string
+        mediaserver_url_webm:
+          type: [string, 'null']
+        mediaserver_url_mp4:
+          type: [string, 'null']
+        video_card_url_mp4:
+          type: [string, 'null']
+      additionalProperties: true
